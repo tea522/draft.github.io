@@ -30,8 +30,7 @@ $ hexo new "My New Post"
 ```
 然后使用  hexo g (generate) && hexo d (deploy)
 
-<!-- more     -->
-<!-- 折叠后续信息，看起来不那么冗余 -->
+
 
 <!-- More info: [Writing](https://hexo.io/docs/writing.html)
 
