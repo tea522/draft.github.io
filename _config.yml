@@ -97,10 +97,8 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme:  next  #原来是 landscape， 使用next 主题，在themes/next/_config.yml 进行配置
+theme:  landscape #原来是 landscape， 使用next 主题，在themes/next/_config.yml 进行配置
 
-rendering:      #安装 hexo-renderer-nunjucks 插件后，需在配置添加此信息
-  engine: nunjucks
 
 
 # Deployment
