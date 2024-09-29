@@ -72,6 +72,14 @@ $  npm install 插件名  --save
 ```
 其中，插件名均以“hexo-”开头，Hexo会自动加载有此前缀的插件，而没有该前缀的插件是不会被自动识别的。--save参数告诉npm将插件名记录在网站目录的package.json里，以便于直接使用npm install（不带参数）更新或直接安装.
 
+### 卸载插件
+``` bash
+$ npm list & npm uninstall 插件名  --save
+```
+然后删除相关配置和文件： 配置文件中有PLugins模块，删除对应的插件设置； 删除node
+_modules/ 目录下对应的插件文件. 加上--save参数后，存储在package.json中的插件信息也会被移除；如果不加此参数，那么下次使用npm install安装时该插件还会被装上.
+
+### 更换使用next主题时可能遇到的问题
 
 #### 更换主题后，使用hexo g 命令后出现no layout...的问题如何解决？
 
@@ -112,12 +120,9 @@ math:
 可参考(https://cps.ninja/2019/03/16/hexo-with-latex/).
 
 
-### 卸载插件
-``` bash
-$ npm list & npm uninstall 插件名  --save
-```
-然后删除相关配置和文件： 配置文件中有PLugins模块，删除对应的插件设置； 删除node
-_modules/ 目录下对应的插件文件. 加上--save参数后，存储在package.json中的插件信息也会被移除；如果不加此参数，那么下次使用npm install安装时该插件还会被装上.
+Next主题可能依赖于某些插件或组件，确保这些依赖已经正确安装。例如，Next主题可能需要hexo-renderer-swig渲染器，可以通过以下命令安装：
+
+
 
 
 

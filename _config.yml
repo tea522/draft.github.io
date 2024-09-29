@@ -13,8 +13,8 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://tea522.github.io/project   #原来是http://example.com
-root: /project/        #如果你的网站部署在子目录下，比如https://tea522.github.io/project，则root应该设置为/project/
+url: https://tea522.github.io   #原来是http://example.com
+root: /       #如果你的网站部署在子目录下，比如https://tea522.github.io，则root应该设置为/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -97,7 +97,11 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme:   next     #原来是 landscape， 使用next 主题，在themes/next/_config.yml 进行配置
+theme:   landscape   #原来是 landscape， 使用next 主题，在themes/next/_config.yml 进行配置
+
+rendering:      #安装 hexo-renderer-nunjucks 插件后，需在配置添加此信息
+  engine: nunjucks
+
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
